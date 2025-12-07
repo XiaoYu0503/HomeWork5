@@ -57,7 +57,9 @@ if st.button("開始分析", type="primary"):
             # 但 text-classification pipeline 預設行為可能不同，這裡我們直接用預設並解析
             # 為了獲取所有標籤的分數，我們可以使用 return_all_scores=True (舊版) 或 top_k=None (新版)
             try:
-                results = classifier(user_input, top_k=None)
+                # 模型有輸入長度限制 (通常是 512 tokens)，過長的文本會導致錯誤
+                # 因此我們開啟 truncation=True 來自動截斷過長的文本
+                results = classifier(user_input, top_k=None, truncation=True, max_length=512)
                 # results 是一個 list of list of dicts, e.g., [[{'label': 'ChatGPT', 'score': 0.9}, {'label': 'Human', 'score': 0.1}]]
                 
                 # 解析結果
