@@ -41,6 +41,10 @@ streamlit run app.py
 ## 使用模型
 本專案使用 [Hello-SimpleAI/chatgpt-detector-roberta](https://huggingface.co/Hello-SimpleAI/chatgpt-detector-roberta) 模型進行偵測。
 
+## 開發過程與對話紀錄
+本專案的開發過程與 AI Agent 的對話紀錄已整理於以下文件：
+- [📄 conversation_log.md](./conversation_log.md)
+
 ## 檔案結構
 - `app.py`: 主應用程式程式碼
 - `requirements.txt`: 專案依賴列表
