@@ -62,3 +62,24 @@ scipy
 ## 5. 交付
 **Agent:**
 完成所有檔案建立，並整理在 `Q1_AI_Detector` 資料夾中，供用戶上傳至 GitHub。
+
+## 6. 除錯與優化 (Debug & Refactor)
+
+### 6.1 解決長文本錯誤
+**User:**
+回報錯誤：`The expanded size of the tensor (833) must match the existing size (514)...`
+
+**Agent:**
+- **原因**: 輸入文本長度超過模型限制 (512 tokens)。
+- **解法**: 在 `classifier` 呼叫中加入 `truncation=True` 與 `max_length=512` 參數。
+- **結果**: 修正 `app.py` 並推送更新。
+
+### 6.2 專案結構重構
+**User:**
+希望不要將檔案放在 `Q1_AI_Detector` 子資料夾中。
+
+**Agent:**
+- 將所有檔案移動至根目錄。
+- 更新 `README.md` 連結。
+- 刪除空資料夾。
+- 提醒用戶更新 Streamlit Cloud 的部署設定 (Main file path)。
