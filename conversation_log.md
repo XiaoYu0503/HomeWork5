@@ -83,3 +83,14 @@ scipy
 - 更新 `README.md` 連結。
 - 刪除空資料夾。
 - 提醒用戶更新 Streamlit Cloud 的部署設定 (Main file path)。
+
+### 6.3 文件更新與 PDF 匯出
+**User:**
+- 請求更新 GitHub 上的 README 內容。
+- 詢問如何將對話紀錄匯出成 PDF。
+- 要求將最後的對話紀錄也寫入 `conversation_log.md`。
+
+**Agent:**
+- 更新 `README.md`：新增功能說明、Demo 連結區塊、以及對話紀錄的連結。
+- 提供 PDF 匯出教學：建議使用 VS Code 的 Markdown Preview 列印功能。
+- 即時更新 `conversation_log.md`：將上述所有互動過程補齊至文件中，確保紀錄完整。
