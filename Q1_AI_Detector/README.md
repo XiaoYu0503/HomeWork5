@@ -7,7 +7,11 @@
 ## 功能
 - 輸入文本進行即時分析
 - 顯示 AI 與 Human 的機率分佈
+- 支援長文本自動截斷 (Auto-truncation)
 - 簡單直觀的 UI
+
+## 線上 Demo
+[點擊這裡查看 Streamlit App Demo](https://share.streamlit.io/) (請替換為您的實際部署連結)
 
 ## 安裝與執行
 
